@@ -54,6 +54,9 @@ if(BUILD_Demo)
 
   add_executable(demo_txt demo/demo_txt.cpp)
   target_link_libraries(demo_txt ${PROJECT_NAME} ${OpenCV_LIBS})
+
+  add_executable(demo_txt_associate demo/demo_txt_associate.cpp)
+  target_link_libraries(demo_txt_associate ${PROJECT_NAME} ${OpenCV_LIBS})
 endif(BUILD_Demo)
 
 configure_file(src/DBoW2.cmake.in

@@ -135,8 +135,7 @@ void testVocCreation(const vector<vector<cv::Mat>> &features)
   // save the vocabulary to disk
   cout << endl
        << "Saving vocabulary..." << endl;
-  // voc.save("small_voc.yml.gz");
-  voc.saveToTextFile("demo.txt");
+  voc.save("small_voc.yml.gz");
   cout << "Done" << endl;
 }
 
